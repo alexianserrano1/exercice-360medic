@@ -1,0 +1,28 @@
+<h1>Produits  {{lastFiche}}</h1>
+
+<div>
+    <div>
+        <label>
+            <input [(ngModel)]="searchValue" name="search" 
+                placeholder="Rechercher un produit" />
+        </label>
+        <button (click)="croissant()">Croissant</button>
+        <button (click)="decroissant()">Decroissant</button>
+    </div>
+
+    <div *ngIf="lastFiche">
+        <a routerLink="/product/{{lastFiche.split(' ').join('_')}}">
+            Dernière fiche consultée
+        </a>
+    </div>
+
+    <div *ngIf="products">
+        <ul *ngFor="let product of products | search:searchValue">
+            <!-- split + join permet d'avoir un URl sans espace -->
+            <a routerLink="/product/{{product.product_name.split(' ').join('_')}}">
+                <li><span></span>{{product.product_name}}</li>
+            </a>
+        </ul>
+    </div>
+
+</div>
