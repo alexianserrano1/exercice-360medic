@@ -1,0 +1,35 @@
+.nom-produit {
+    color: rgb(207, 40, 40);
+    margin: 1em 0 1em .5em;
+    font-family: Arial, sans-serif;
+}
+
+.infos {
+    padding: 1em 0 1em 1em;
+    margin: 0 1em 2em 1em;
+    font-family: Arial, sans-serif;
+    background-color: rgb(226, 224, 224);
+    border-radius: 4px;
+}
+
+.infos span {
+    font-size: 117%;
+}
+
+.supplier {
+    padding: 0 0 .5em 0;
+}
+
+.quantity {
+    padding: 0 0 .5em 0;
+}
+
+.back {
+    margin: 0 0 0 .5em;
+}
+
+.back:hover {
+    background-color: lightgray;
+    border-radius: 4px;
+    cursor: pointer;
+}

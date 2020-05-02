@@ -3,13 +3,16 @@ a {
 }
 
 nav.titre {
-    margin: 0 0 1.5em 1em;
+    margin: 0 62.2em 1.5em 0;
 }
 
 nav.titre h1 {
-    color:rgb(212, 59, 39);
+    color:rgb(207, 40, 40);
     font-family: Arial, sans-serif;
     font-size: 350%;
+    border-bottom: medium groove rgb(207, 40, 40);
+    padding: 0 0 0 1em; 
+    margin-left: 0px;
 }
 
 div.tri {
@@ -27,6 +30,7 @@ div.tri {
 
 .tri select {
     cursor: pointer;
+    
 }
 
 .lastFiche {
@@ -36,12 +40,19 @@ div.tri {
 }
 
 .lastFiche a {
+    border-radius: 4px;
+    padding: .5em;
+    color: rgb(207, 40, 40);
+}
+.lastFiche a:hover {
+    background-color: lightgray;
+    left: .1em;
 }
 
 .products {
     background-color: rgb(226, 224, 224);
-    padding: .3em 15em .3em 0;
-    margin: 0 0 0 1em;
+    padding: .3em 0 .3em 0;
+    margin: 0 1em 0 1em;
     border-radius: 5px;    
 }
 

@@ -6,21 +6,19 @@
             [(ngModel)]="searchValue" name="search" 
             placeholder="Rechercher un produit" />
         
-        <label class="tri-prix">Trier par prix: 
+        <label class="tri-prix">Trier par prix : 
             <select name="tri">
-                <option value="croissant" selected>Croissant</option>
-                <option value="decroissant">Decroissant</option>
+                <option (click)="croissant()" value="croissant" selected>Croissant</option>
+                <option (click)="decroissant()" value="decroissant">Decroissant</option>
             </select>
         </label>
 
-        <button (click)="croissant()">Croissant</button>
-        <button (click)="decroissant()">Decroissant</button>
     </div>
 
     <div *ngIf="lastFiche"
         class="lastFiche">
         <a routerLink="/product/{{lastFiche.split(' ').join('_')}}">
-            Dernière fiche consultée
+            Dernière fiche consultée ➔
         </a>
     </div>
 

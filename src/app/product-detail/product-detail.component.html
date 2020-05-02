@@ -1,12 +1,14 @@
-<h1>{{product.product_name | uppercase}}</h1>
-<div>
-    <span>Fournisseur : </span>{{product.supplier}}
-</div>
-<div>
-    <span>Quantité : </span>{{product.quantity}}
-</div>
-<div>
-    <span>Prix à l'unité : </span>{{product.unit_cost}}
+<h1 class="nom-produit">{{product.product_name | uppercase}}</h1>
+<div class="infos">    
+    <div class="supplier">
+        Fournisseur : <span>{{product.supplier}}</span>
+    </div>
+    <div class="quantity">
+        Quantité(s) : <span>{{product.quantity}}</span>
+    </div>
+    <div class="cost">
+        Prix à l'unité : <span>{{product.unit_cost}}</span>
+    </div>
 </div>
 
-<button (click)="goBack()">Retour</button>
+<button class="back" (click)="goBack()">Retour</button>
