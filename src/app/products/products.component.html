@@ -24,7 +24,7 @@
 
     <div class="products">
         <ul>
-            <li *ngFor="let product of products | search:searchValue">
+            <li *ngFor="let product of products | search: searchValue">
                 <!-- split + join permet d'avoir un URl sans espace -->
                 <a routerLink="/product/{{product.product_name.split(' ').join('_')}}">
                     <span></span>{{product.product_name}}

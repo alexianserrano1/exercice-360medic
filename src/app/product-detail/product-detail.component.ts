@@ -28,6 +28,18 @@ export class ProductDetailComponent implements OnInit {
     const product_name = this.route.snapshot.paramMap.get('product_name').split('_').join(' ');
     this.productService.getProduct(product_name)
       .subscribe(product => this.product = product);
+
+    /*
+    this.productService.getProducts()
+      .subscribe(products => {
+        products.forEach(product => { 
+          if(product.product_name === product_name) {
+            this.product = product;
+            return;
+          }
+        })
+      });
+    */
   }
 
   goBack(): void {
